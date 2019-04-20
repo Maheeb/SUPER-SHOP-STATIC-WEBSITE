@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.card ul li:hover{
+    
+    background-color:#007BFF;
+    color: white;
+}
+
+
+        .to-top { 	
+	position: fixed; 
+	bottom: 20px; 
+	right: 20px; 
+	text-decoration: none; 
+	color: #fff; 
+	background: #151f28; 
+	padding: 10px 20px; 
+	display: none; 
+}
+.to-top:hover{ 
+	color: #151f28; 
+	background: #fff; 
+}
+        .col-md-3{
+            margin: 35px;
+        }
+        nav .form-inline .btn:hover{
+        border: 1px solid white;
+        background-color:green;
+        color: white;
+    }
+    .row{
+        margin: 10px;
+    }
+    
+    .carousel-control-next-icon{
+        color: black;
+        height: 50px;
+        width: 50px;
+        background-color: dimgrey;
+    
+        border-radius: 50%;
+    }
+    nav .form-inline .btn:hover{
+        border: 1px solid white;
+        background-color:green;
+        color: white;
+    }     
+            .inner{
+        overflow: hidden;
+    }
+    .inner img{
+        transition: all 1.0s ease;
+    }
+    .inner:hover img{
+        transform: scale(1.9);
+    }
+.card{
+    transition: all 1.0s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+        #navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+            z-index: 100000;
+}
+        
+        carouselExampleIndicators{
+            margin-top: 100px;
+        }
+        
+        #carouselExampleIndicators{
+            margin-top: 70px;
+        }
