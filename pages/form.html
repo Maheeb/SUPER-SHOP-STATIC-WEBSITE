@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FORMS</title>
+    <link rel="shortcut icon" type="image/png" href="img/tab_title.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+
+    </script>
+    <style>
+        
+    
+    </style>
+
+</head>
+<body>
+    <!--===============NAVBAR SECTION START================-->
+    <!--===============NAVBAR SECTION START================-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="navbar">
+        <a class="navbar-brand" href="../index.html">SUPER SHOP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="fashion.html">Fashion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="tech.html">Technologies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="gift.html">Gift Corner</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Food Corner
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="veg.html">Vegetables</a>
+                        <a class="dropdown-item" href="protins.html">Protein Section</a>
+                        <a class="dropdown-item" href="fruits.html">Fruits</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="form.html">Contacts</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-default my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!--===============NAVBAR SECTION END================-->
+    <!--===============NAVBAR SECTION END================-->
+    
+    
+    <!--===============CONTACTS FORM START=================-->
+    
+    <div class="row" style="margin-top: 70px;">
+        <div class="col-md-12">
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-warning text-center">This Form Has Javascript Validation</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-primary" id="showbox" style="font-size:25px;padding: 10px 20px;">
+                <input type="button" class="btn btn-warning btn-block" value="Validation Rules: Show/Hide" id="bb">
+                
+                <div class="text">
+                      <div class="list-group">
+                      <a href="#" class="list-group-item list-group-item-action">Avoid Comma(,), Full Stop(.)</a>
+  <a href="#" class="list-group-item list-group-item-action">Email Should Like This: 123example@gmail.com</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Password is Alphanumerical min:2, Max:20</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Address is Alphanumerical min:2, Max:20</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-primary">City is Alphabetical min:5, Max:20</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Zip Code is Numerical min:5, Max:20</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Comment is Alphabetical</a>
+</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+    <!--==========EMAIL INPUT================-->
+                            <input type="text" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Password</label>
+   <!--==========PASSWORD INPUT================-->
+                            <input type="password" class="form-control" id="pass" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Address</label>
+<!--==========ADDRESS INPUT================-->
+                        <input type="text" class="form-control" id="add" placeholder="1234 Main St">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+<!--==========CITY INPUT================-->
+                            <input type="text" class="form-control" id="ct">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState">State</label>
+<!--==========DROPDOWN  INPUT================-->
+                            <select id="stt" class="form-control">
+                                <option value="Nothins">Choose...</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Germany">Germany</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputZip">Zip</label>
+<!--==========ZIP CODE INPUT================-->
+                            <input type="text" class="form-control" id="zip">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Example textarea</label>
+<!--==========COMMENT TEXT AREA INPUT================-->
+                            <textarea class="form-control" id="com" rows="3" cols="78"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Check me out
+                            </label>
+                        </div>
+                    </div>
+                    <input type="button" class="btn btn-primary btn-block" value="Submit"  onclick="shw()" data-toggle="modal" data-target="#exampleModalCenter">
+                    
+                    <input type="reset" class="btn btn-danger btn-block" value="CLEAR FORM" style="margin-top: 10px;">
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Thank You</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    We have received your message!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">TRY AGAIN</button>
+                    <button type="button" class="btn btn-danger">DISABLE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--============================-->
+    <!--===============FOOTER SECTION START================-->
+    <!--===============FOOTER SECTION START================-->
+
+    <div class="container bg-dark">
+        <div class="row">
+            
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="img/footimg.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+  <div class="card-header">
+    Featured
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+</div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+  
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+            </div>
+           
+        </div>
+    </div>
+    
+     
+   <!--===============FOOTER=====================-->
+   <!--===============FOOTER=====================-->
+   <!-- Footer -->
+	<section id="footer">
+		<div class="containe bg-dark">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5 class="text-light">Quick links</h5>
+					<ul class="list-unstyled quick-links ">
+						<li><a href="javascript:void();" class="text-light" class="text-light"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();" class="text-light" class="text-light"><i class="fa fa-angle-double-right"></i>Gallery</a></li>
+						<li><a href="javascript:void();" class="text-light"><i class="fa fa-angle-double-right"></i>Contacts</a></li>
+						<li><a href="javascript:void();" class="text-light"><i class="fa fa-angle-double-right"></i>Food Gallery</a></li>
+						<li><a href="javascript:void();" class="text-light"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();" class="text-light"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();" class="text-light"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();" class="text-light"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();" class="text-light"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="javascript:void();" class="text-light"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();" class="text-light"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();" class="text-light"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();" class="text-light"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();" class="text-light"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row bg-dark">
+       <div class="col-md-12">
+           <div class="text text-center text-light">
+               Copyright © 2018 supShop Inc. All rights reserved.<br>shaarifulz@gmail.com 
+           </div>
+       </div>
+   </div>	
+   </div>
+    </section>
+    <script>
+        
+        
+        
+        function shw(){
+            var a= document.getElementById("email").value;
+            var b= document.getElementById("pass").value;
+            var c= document.getElementById("add").value;
+            var d= document.getElementById("ct").value;
+            var e= document.getElementById("stt");
+            var f= document.getElementById("zip").value;
+            var g= document.getElementById("com").value;
+            
+            
+            
+            if((a.match(/^[a-z0-9]+\@[a-z]+\.[a-z]{2,3}$/))&&(b.match(/^[a-zA-Z0-9]{2,20}$/))&&(c.match(/^[a-zA-Z0-9 ]{2,20}$/))&&(d.match(/^[a-zA-Z]{2,20}$/))&&(mm(e))&&(f.match(/^[0-9]{2,20}$/))&&
+               (g.match(/^[a-zA-Z0-9 ]{2,20}$/))){
+               document.getElementById("showbox").innerHTML="Your Email Id is "+a+"<br>"+"Your Given Password "+b+"<br>"+"Your Address: "+c+"<br>"+"Your living City "+d+"<br>"+"You are from "+arr1+"<br>"+"Your Zip Code Is "+f+"<br>"+"And thanks for your comment "+g;
+               
+               }else{
+                   alert("Insert According To Validation Rules");
+               }
+            
+        }
+        var arr1=[];
+        function mm(p){
+            arr1.length=0;
+            for(var i=0;i<p.options.length;i++){
+                if(p.options[i].selected){
+                    arr1.push(p.options[i].value);
+                }
+            }
+            
+            if(arr1.length>0){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        
+        
+        //jQuery Fade in Fade Out
+        $(document).ready(function(){
+            $("#bb").click(function(){
+    $(".text").fadeToggle();
+            })  
+        });
+        
+    </script>
+</body>
+
+</html>
