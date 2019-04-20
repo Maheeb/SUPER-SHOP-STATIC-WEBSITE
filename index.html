@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SUPER SHOP</title>
+    <link rel="shortcut icon" type="image/png" href="img/tab_title.png">
+    <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">  
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+
+    <script>
+        // optional00
+		 $(function(){ $('.carousel').carousel({ interval: 3000 * 1 }); });
+    </script>
+    <style>
+        
+</style>
+<script>            
+	jQuery(document).ready(function() {
+		var duration = 500;
+		jQuery(window).scroll(function() {
+			if (jQuery(this).scrollTop() > 200) {
+				jQuery('.to-top').fadeIn(duration);
+			} else {
+				jQuery('.to-top').fadeOut(duration);
+			}
+		});
+
+		jQuery('.to-top').click(function(event) {
+			event.preventDefault();
+			jQuery('html').animate({scrollTop: 0}, duration);
+			return false;
+		})
+	});
+</script>	
+</head>
+
+<body>
+    <!--===============NAVBAR SECTION START================-->
+    <!--===============NAVBAR SECTION START================-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="navbar">
+        <a class="navbar-brand" href="index.html">SUPER SHOP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="pages/gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="pages/fashion.html">Fashion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="pages/tech.html">Technologies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="pages/gift.html">Gift Corner</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Food Corner
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="pages/veg.html">Vegetables</a>
+                        <a class="dropdown-item" href="pages/protins.html">Protein Section</a>
+                        <a class="dropdown-item" href="pages/fruits.html">Fruits</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="pages/form.html">Contacts</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-default my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!--===============NAVBAR SECTION END================-->
+    <!--===============NAVBAR SECTION END================-->
+
+    <!--===============CARDS SECTION START================-->
+    <!--===============CARDS SECTION START================-->
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container centered">
+                    <div class="row ">
+                        <div class="col-md-4">
+                            <div class="card shadow" style="width: 18rem;">
+                               <div class="inner">
+                                   <img class="card-img-top" src="img/fhome.jpg" alt="Card image cap">
+                               </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Fashion Gallery</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+
+
+
+                                <div class="card-body">
+
+                                    <a href="#" class="card-link">Card link</a>
+                                    <a href="#" class="card-link">Another link</a>
+                                </div>
+
+                                <li class="list-group-item"><a href="pages/fashion.html" class="btn btn-primary btn-block">View Details</a></li>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                               <div class="inner">
+                                   <img class="card-img-top" src="img/frhome.jpg" alt="Card image cap">
+                               </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Fruits Gallery</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+
+
+
+
+                                <div class="card-body">
+
+                                    <a href="#" class="card-link">Card link</a>
+                                    <a href="#" class="card-link">Another link</a>
+                                </div>
+
+                                <li class="list-group-item"><a href="pages/fruits.html" class="btn btn-primary btn-block">View Details</a></li>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                               <div class="inner">
+                                   <img class="card-img-top" src="img/thome.jpg" alt="Card image cap">
+                               </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Tech Gallery</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+
+
+
+
+                                <div class="card-body">
+
+                                    <a href="#" class="card-link">Card link</a>
+                                    <a href="#" class="card-link">Another link</a>
+                                </div>
+
+                                <li class="list-group-item"><a href="pages/tech.html" class="btn btn-primary btn-block">View Details</a></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="container centered">
+                    <div class="row ">
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                               <div class="inner">
+                                    <img class="card-img-top" src="img/ghome.jpg" alt="Card image cap">
+                               </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Gift Gallery</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+
+
+
+
+                                <div class="card-body">
+
+                                    <a href="#" class="card-link">Card link</a>
+                                    <a href="#" class="card-link">Another link</a>
+                                </div>
+
+                                <li class="list-group-item"><a href="pages/gift.html" class="btn btn-primary btn-block">View Details</a></li>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                               <div class="inner">
+                                    <img class="card-img-top" src="img/vhome.jpg" alt="Card image cap">
+                               </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Vagitables Gallery</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+
+
+
+
+                                <div class="card-body">
+
+                                    <a href="#" class="card-link">Card link</a>
+                                    <a href="#" class="card-link">Another link</a>
+                                </div>
+
+                                <li class="list-group-item"><a href="pages/veg.html" class="btn btn-primary btn-block">View Details</a></li>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                               <div class="inner">
+                                    <img class="card-img-top" src="img/phome.jpg" alt="Card image cap">
+                               </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Protin Gallery</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+
+
+
+
+                                <div class="card-body">
+
+                                    <a href="#" class="card-link">Card link</a>
+                                    <a href="#" class="card-link">Another link</a>
+                                </div>
+
+                                <li class="list-group-item"><a href="pages/protins.html" class="btn btn-primary btn-block">View Details</a></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!--===============CARDS SECTION ENDS================-->
+    <!--===============CARDS SECTION ENDS================-->
+
+
+
+    <!--======================================-->
+    <!--======================================-->
+<div class="row" style="margin-top: 70px;">
+    <div class="col-md-12">
+        <div class="card text-center">
+        <div class="card-header">
+            Featured
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">View Details</a>
+        </div>
+
+    </div>
+    </div>
+</div>
+    
+
+    <!--============================-->
+    <!--===============MID SECTION START================-->
+    <!--===============MID SECTION START================-->
+
+<div class="row">
+    <div class="col-md-6">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" direction="left" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="inner">
+                        <img class="d-block w-100" src="img/sl1.jpg" alt="First slide">
+                    </div>
+
+                    <div class="carousel-caption d-none d-md-block text-center">
+                        <h5>Lorem ipsum dolor sit amet</h5>
+                        <a href="pages/form.html"><button type="button" class="btn btn-primary">Watch More</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="inner">
+                        <img class="d-block w-100" src="img/sl2.jpg" alt="Second slide">
+                    </div>
+
+                    <div class="carousel-caption d-none d-md-block text-center">
+                        <h5>Lorem ipsum dolor sit ame</h5>
+                        <a href="pages/form.html"><button type="button" class="btn btn-primary">Watch More</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="inner">
+                        <img class="d-block w-100" src="img/sl3.jpg" alt="Third slide">
+                    </div>
+
+                    <div class="carousel-caption d-none d-md-block text-center">
+                        <h5>Lorem ipsum dolor sit amet</h5>
+                        <a href="pages/form.html"><button type="button" class="btn btn-primary">Watch More</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat temporibus, consectetur quaerat minima poss</h4>
+        <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Gift Someone
+            </a>
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ipsa minima ullam perferendis voluptatum, in.</p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <div class="input-group" style="margin-top: 5px;">
+                    <input type="text" class="form-control" placeholder="Recipient's Contact Numberts" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn  btn-success" type="button">Send</button>
+                        <button class="btn btn btn-danger" type="button">Clear</button>
+                    </div>
+                </div>
+                
+                <div class="input-group" style="margin-top: 5px;">
+                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn  btn-success" type="button">Send</button>
+                        <button class="btn btn btn-danger" type="button">Clear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--============================-->
+    <!--===============MID SECTION END================-->
+    <!--===============MID SECTION END================-->
+
+   
+   
+    <!--============================-->
+    <!--=============JUMBOTRON START================-->
+    <!--==============JUMBOTRON SECTION START================-->
+    <div class="row">
+        <div class="col-md-8">
+            <div class="jumbotron">
+                <h4 class="display-4">ABOUT US</h4>
+                <hr class="my-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="img/ab1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Adam Smith</h5>
+                                <p class="card-text">Some quick example text to Lorem ipsum dolor sit amet. build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="img/ab2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Daniel John</h5>
+                                <p class="card-text">Some quick example text tolore Lorem ipsum dolor sit amet. build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="jumbotron">
+                <h4 class="display-4">CONTACTS</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Submit</button>
+                </form>
+                <h5>Lorem Lorem ipsum dolor sit amet.it amet, consectetur adipisicing elit. Quis, reiciendis.</h5>
+            </div>
+        </div>
+    </div>
+
+
+    <!--============================-->
+    <!--===============MID SECTION ENDS================-->
+    <!--===============MID SECTION ENDST================-->
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Thank You</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Congrats! Your Messege Has Been Spent Successfully.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--============================-->
+    <!--===============FOOTER SECTION START================-->
+    <!--===============FOOTER SECTION START================-->
+
+    <div class="container bg-dark">
+        <div class="row">
+            
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="img/footimg.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+  <div class="card-header">
+    Featured
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+</div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+  
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+            </div>
+           
+        </div>
+    </div>
+<a href="#" class="to-top"><i class="fa fa-chevron-up"></i></a>
+   
+   <!--===============FOOTER=====================-->
+   <!--===============FOOTER=====================-->
+   
+   <div class="row">
+       <div class="col-md-12">
+          <div class="inner">
+              <img src="img/geo.gif" alt="" style="width: 95%"; height="400px;">
+          </div>
+           
+       </div>
+   </div>
+    <!--===================FONT AWESOME ICON=====================-->
+    <!--===================FONT AWESOME ICON=====================-->
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2"><i class="fa fa-facebook-square fa-5x" style="color: #4867AA;"></i></div>
+        <div class="col-md-2"><i class="fa fa-twitter-square fa-5x " style="color: #007BFF;"></i></div>
+        <div class="col-md-2"><i class="fa fa-youtube-square fa-5x" style="color: red;"></i> </div>
+        <div class="col-md-2"><i class="fa fa-linkedin-square fa-5x" style="color: #0274B3;"></i> </div>
+        <div class="col-md-2"></div>
+    </div>
+      
+     <!-- Footer -->
+	<section id="footer">
+		<div class="containe bg-dark">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5 class="text-light">Quick links</h5>
+					<ul class="list-unstyled quick-links ">
+						<li><a href="javascript:void();" class="text-light" class="text-light"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();" class="text-light" class="text-light"><i class="fa fa-angle-double-right"></i>Gallery</a></li>
+						<li><a href="javascript:void();" class="text-light"><i class="fa fa-angle-double-right"></i>Contacts</a></li>
+						<li><a href="javascript:void();" class="text-light"><i class="fa fa-angle-double-right"></i>Food Gallery</a></li>
+						<li><a href="javascript:void();" class="text-light"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();" class="text-light"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();" class="text-light"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();" class="text-light"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();" class="text-light"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="javascript:void();" class="text-light"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();" class="text-light"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();" class="text-light"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();" class="text-light"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();" class="text-light"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row bg-dark">
+       <div class="col-md-12">
+           <div class="text text-center text-light">
+               Copyright © 2018 supShop Inc. All rights reserved.<br>shaarifulz@gmail.com 
+           </div>
+       </div>
+   </div>	
+   </div>
+    </section>
+    <script>
+       
+    </script>
+</body>
+
+</html>
